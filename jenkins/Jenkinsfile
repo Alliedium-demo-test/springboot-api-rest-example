@@ -48,7 +48,7 @@ pipeline {
         recordIssues enabledForFailure: true, failOnError: false, tool: pmdParser(pattern: "**/target/pmd.xml")
       }
     }
-  stages {
+ 
     stage('input') {
       agent any
       input {
